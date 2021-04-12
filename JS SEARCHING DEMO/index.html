@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/custom/style.css">
+</head>
+<body onload="fnOnLoad()">
+
+<div id="formdisplay">
+
+    <form id="form1" name="form1" method="post">
+        <fieldset>
+            <legend>Search</legend>
+            Name: <input type="text" id="nameSearch" name="name" onkeyup="fnSearch()"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Email: <input type="text" name="email"><br>
+        </fieldset>
+    </form>
+
+    <form name="mainForm">
+        <input type="radio" id="find" name="radio" value="find" checked>Find  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="foreach"  name="radio" value="foreach">Foreach   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="filter" name="radio" value="filter" >Filter   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="map" name="radio" value="map">Map  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="findindex" name="radio" value="findindex">FindIndex  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="lastindexof" name="radio" value="lastindexof">LastIndexOf  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </form>
+
+</div>
+
+<div id="display"></div>
+
+<script src="js/custom/app.js"></script>
+</body>
+</html>
